@@ -4,7 +4,7 @@ Some functions to clean tweets and generate basic features
 ## Clean and lemmatize text
 Input = string, output = string
 
-  def clean_and_lemmatize(input_text, remove_stopwords = True, remove_mentions_hashtags = True, remove_punctuation = True):
+    def clean_and_lemmatize(input_text, remove_stopwords = True, remove_mentions_hashtags = True, remove_punctuation = True):
     """
     Removes punctuation, stopwords, hashtags and handles. Then lemmatizes with spacy("en").
     """
@@ -20,7 +20,7 @@ By default it will remove stopwords, hastags, mentions and punctuation. These ca
 ## Generate features
 input = DataFrame , output = (DataFrame, list_of_added_column_names).
 
-  def generate_features(df, text_column_name = 'text'):
+    def generate_features(df, text_column_name = 'text'):
     """
     Takes a DataFrame as input, returns the df with added columns and a list with the names of added columns. 
     By default column to be processed is named 'text', change text_column_name parameter. 
